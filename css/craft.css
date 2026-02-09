@@ -1,0 +1,121 @@
+/* Our Craft page */
+
+.craft-process {
+    padding: 2rem 0 4rem;
+}
+
+.section-title.centered {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.process-list {
+    list-style: none;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.process-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: start;
+}
+
+.process-num {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brown-deep);
+    color: var(--cream);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.process-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--text);
+}
+
+.process-content p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.process-content a {
+    color: var(--brown-deep);
+    text-decoration: underline;
+}
+
+.process-content a:hover {
+    color: var(--brown-rich);
+}
+
+.craft-materials {
+    padding: 4rem 0;
+    background: var(--cream-dark);
+}
+
+.craft-materials .section-title.centered {
+    margin-bottom: 2rem;
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.material-card {
+    padding: 1.75rem;
+    background: var(--warm-white);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.material-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.material-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.craft-cta {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.craft-cta .section-title {
+    margin-bottom: 0.5rem;
+}
+
+.craft-cta .section-subtitle {
+    margin: 0 auto 1.25rem;
+}
+
+.craft-cta .section-subtitle a {
+    color: var(--brown-deep);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .materials-grid {
+        grid-template-columns: 1fr;
+    }
+}
